@@ -1,0 +1,50 @@
+package tutorial;
+
+import java.util.Scanner;
+
+public class jama {
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("복숭아1,바나나2");
+        int input=scanner.nextInt();
+        Fruit fruit;
+        if(input==1) {
+            fruit = new Peach();
+            fruit.show();
+        }
+        else if(input==2) {
+            fruit = new Banana();
+            fruit.show();
+        }
+    }
+}
+package tutorial;
+
+public class Fruit {
+    String name;
+    int price;
+    int fresh;
+
+    public void show(){
+        System.out.println("이름"+name);
+        System.out.println("가격"+price);
+        System.out.println("신선"+fresh);
+    }
+}
+package tutorial;
+public class Banana extends Fruit{
+    public Banana(){
+        price=15020;
+        name="바나나";
+        fresh=552;
+    }
+}package tutorial;
+
+public class Peach extends Fruit{
+    public Peach(){
+        price=1500;
+        name="복숭아";
+        fresh=55;
+    }
+}
+
