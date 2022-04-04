@@ -31,7 +31,11 @@ class Boiler {
         public static void main(String[] args) {
             Boiler Boil1 = new Boiler(39.5);
             Boiler Boil2 = new Boiler();
+<<<<<<< HEAD
              System.out.println(Boil1.tempUp());
+=======
+            System.out.println(Boil1.tempUp());
+>>>>>>> 4b23a56ec15e18bd2ad2afefd0c10fca15d70a97
             System.out.println(Boil2.tempUpDown(40));
         }
     }
